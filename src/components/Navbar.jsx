@@ -3,14 +3,10 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
 import { Link } from 'react-router-dom';
 import { makeStyles } from '@mui/styles';
 import Badge from '@mui/material/Badge';
 import { useSelector } from 'react-redux';
-import { useDispatch } from 'react-redux';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 
 
@@ -32,7 +28,6 @@ const Navbar = () => {
 
     const classes = useStyles()
     const notifications = useSelector(state => state.navbar.notifications)
-    console.log(notifications)
 
     return (
         <Box sx={{ flexGrow: 1, height: 50 }}>
